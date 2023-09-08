@@ -65,32 +65,36 @@ export default function Game() {
     setCurrentMove(nextHistory.length - 1);
   }
 
-  function jumpTo(nextMove) {
-    setCurrentMove(nextMove);
-  }
+  // function jumpTo(nextMove) {
+  //   setCurrentMove(nextMove);
+  // }
+  // removed to get rid of logging
 
-  const moves = history.map((squares, move) => {
-    let description;
-    if (move > 0) {
-      description = 'Go to move #' + move;
-    } else {
-      description = 'Go to game start';
-    }
-    return (
-      <li key={move}>
-        <button onClick={() => jumpTo(move)}>{description}</button>
-      </li>
-    );
-  });
+  // const moves = history.map((squares, move) => {
+  //   let description;
+  //   if (move > 0) {
+  //     description = 'Go to move #' + move;
+  //   } else {
+  //     description = 'Go to game start';
+  //   }
+  //   return (
+  //     <li key={move}>
+  //       <button onClick={() => jumpTo(move)}>{description}</button>
+  //     </li>
+  //   );
+  // });
 
   return (
     <div className="game">
       <div className="game-board">
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
-      <div className="game-info">
+
+      {/* removed to get rid of logging  */}
+
+      {/* <div className="game-info">
         <ol>{moves}</ol>
-      </div>
+      </div> */}
     </div>
   );
 }
