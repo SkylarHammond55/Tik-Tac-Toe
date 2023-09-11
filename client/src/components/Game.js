@@ -9,7 +9,7 @@ import "./Chat.css";
 
 function Game({ channel, setChannel }) {
 
-const [color, setColor] = useState("blue")
+const [color, setColor] = useState("white")
 const click = color => {
   setColor(color)
 }
@@ -35,10 +35,25 @@ useEffect(()=>{
   return (
     <div className="gameContainer">
 
-      <button onClick = {
-        () => {click("white")}
-      }>Change Color</button>
+    <div className="themeb">
 
+    <div className="selecttheme">
+      <h1>Select Theme</h1>
+    </div>
+
+      <button className="limeb" onClick = {
+        () => {click("lime")}
+      }></button>
+
+      <button className="pinkb" onClick = {
+        () => {click("#ff00bb")}
+      }></button>
+
+      <button className="blueb" onClick = {
+        () => {click("#0066ff")}
+      }></button>
+
+    </div>
       <Board result={result} setResult={setResult} />
       <Window>
         <MessageList

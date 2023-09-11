@@ -151,12 +151,50 @@ h4 {
   position: absolute;
   right: 50px;
   top: 50px;
-  margin: 10px;
-  padding: 10px;
   cursor: pointer;
 }
 
 .leavegameb {
   position: absolute;
   bottom: 50px;
+}
+
+.limeb {
+  background-color: lime;
+  border-radius: 5px;
+  width: 50px;
+  height: 25px;
+  margin: 5px;
+}
+
+.pinkb {
+  background-color: #ff00bb;
+  border-radius: 5px;
+  width: 50px;
+  height: 25px;
+  margin: 5px;
+}
+
+.blueb {
+  background-color: #0066ff;
+  border-radius: 5px;
+  width: 50px;
+  height: 25px;
+  margin: 5px;
+}
+
+.themeb {
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  align-items: center;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+.selecttheme {
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin-right: 10px;
 }
