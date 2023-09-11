@@ -47,7 +47,13 @@ function SignUp({ setIsAuth }) {
           setUser({ ...user, password: event.target.value });
         }}
       />
-      <button onClick={signUp}> Sign Up</button>
+
+    <div class="card-actions justify-end">
+      <button class="btn btn-success" onClick={signUp}> Sign Up</button>
+    </div>
+
+      {/* <button onClick={signUp}> Sign Up</button> */}
+
     </div>
   );
 }

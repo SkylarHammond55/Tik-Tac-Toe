@@ -38,8 +38,10 @@ function Login({ setIsAuth }) {
           setPassword(event.target.value);
         }}
       />
-      <button onClick={login}> Login</button>
-    </div>
+      <div class="card-actions justify-end">
+      <button className="btn btn-success" onClick={login}> Login</button>
+      </div>
+      </div>
   );
 }
 
