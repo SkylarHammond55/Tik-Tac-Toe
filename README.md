@@ -22,4 +22,4 @@ Created by group 7 through VS Code and React
 -Have a high-quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
 ## Usage
-A page that allows for potential players to play a fun game of tic-tac-toe!
+A page that allows for potential players to play a fun game of tic-tac-toe!!
