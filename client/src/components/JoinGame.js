@@ -22,6 +22,7 @@ function JoinGame() {
     setChannel(newChannel);
   };
   return (
+    <div className="joingamemargin">
     <>
       {channel ? (
         <Channel channel={channel} Input={CustomInput}>
@@ -36,10 +37,11 @@ function JoinGame() {
               setRivalUsername(event.target.value);
             }}
           />
-          <button onClick={createChannel}> Join/Start Game</button>
+          <button class="btn btn-success" onClick={createChannel}> Join/Start Game</button>
         </div>
       )}
     </>
+    </div>
   );
 }
 

@@ -6,6 +6,8 @@
   align-items: center;
   column-count: 2;
   column-gap: 100px;
+  margin-left: 60px;
+  
 }
 
 .str-chat__list {
