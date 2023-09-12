@@ -71,8 +71,6 @@ function App() {
           <div className="logoc">
             <Logo />
           </div>
-
-
           {isAuth ? (
             <Chat client={client}>
               <JoinGame />
