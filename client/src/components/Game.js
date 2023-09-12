@@ -42,15 +42,15 @@ useEffect(()=>{
     </div>
 
       <button className="limeb" onClick = {
-        () => {click("lime")}
+        () => {click("#00ff006d")}
       }></button>
 
       <button className="pinkb" onClick = {
-        () => {click("#ff00bb")}
+        () => {click("#ff00bb4e")}
       }></button>
 
       <button className="blueb" onClick = {
-        () => {click("#0066ff")}
+        () => {click("#0066ff5c")}
       }></button>
 
     </div>

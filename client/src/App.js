@@ -82,9 +82,12 @@ function App() {
         </Chat>
       ) : (
         <> 
+          <div className="flex justify-center">
           <SignUp setIsAuth={setIsAuth} />
           <Login setIsAuth={setIsAuth} />
+          </div>
         </>
+        
       )}
       </div>
   </div>
