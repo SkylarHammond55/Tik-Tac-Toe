@@ -1,5 +1,5 @@
 # Tik-Tac-Toe
-The motivation behind this project was to create an interactive, customizable and fun classic game of tic tac toe. The game can be played with a friend on a screen displaying the board itself, a high score sheet and a chat box that allows text and emojis!..
+The motivation behind this project was to create an interactive, customizable and fun classic game of tic tac toe. The game can be played with a friend on a screen displaying the board itself, a high score sheet and a chat box that allows text and emojis!.....
 
 ## Installation:
 Created by group 7 through VS Code, React, MongoDB and the Mongoose ODM
