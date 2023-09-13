@@ -1,6 +1,7 @@
 import "./App.css";
-import Login from "./components/Login";
-import SignUp from "./components/SignUp";
+// import Login from "./components/Login";
+// import SignUp from "./components/SignUp";
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { StreamChat } from "stream-chat";
 import { Chat } from "stream-chat-react";
 import Cookies from "universal-cookie";
@@ -10,6 +11,8 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import Logo from "./components/Logo"; // Import the Logo component
+import Register from './components/auth/Register'
+import Login from './components/auth/Login'
 
 function App() {
   const api_key = "ufys48qg5naw";
@@ -57,6 +60,8 @@ function App() {
   }, []);
 
   return (
+    <BrowserRouter>
+          <Switch>
     <div>
       <div className="backg">
     <Particles
@@ -83,8 +88,15 @@ function App() {
       ) : (
         <> 
           <div className="flex justify-center">
-          <SignUp setIsAuth={setIsAuth} />
-          <Login setIsAuth={setIsAuth} />
+          
+          <Route path="/register">
+            <Register />
+          </Route>
+
+          <Route path="/login">
+            <Login />
+          </Route>
+
           </div>
         </>
         
@@ -95,7 +107,8 @@ function App() {
 
 
   </div>
-    
+  </Switch>
+  </BrowserRouter>
   
   );
 }
