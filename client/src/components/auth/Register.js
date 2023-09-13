@@ -35,18 +35,24 @@ const Register = () => {
   }
 
   const handleSubmit = async (event) => {
-    event.preventDefault()
+    event.preventDefault();
     try {
-      await axios.post('/api/register', formData)
-      history.push('/login')
+      await axios.post('/api/register', formData);
+      history.push('/login');
     } catch (err) {
-      console.log('error response', err.response.data.errors)
-      console.log('err.response', err.response)
-      setErrors(err.response.data.errors)
+      if (err.response && err.response.data && err.response.data.errors) {
+        const errorData = err.response.data.errors;
+        // Update the 'errors' state with error messages
+        setErrors({
+          username: errorData.username || '', // Use default value if undefined
+          email: errorData.email || '', 
+          password: errorData.password || '',
+          passwordConfirmation: errorData.passwordConfirmation || '',
+        });
+      }
     }
-
-    console.log('errors', errors)
-  }
+  };
+  
 
 //   const handleImageUrl = url => {
 //     setFormData({ ...formData, image: url })
