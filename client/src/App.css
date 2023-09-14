@@ -64,6 +64,10 @@ body {
   height: 30px;
 }
 
+.button {
+  margin-top: 50px;
+}
+
 .login button,
 .signUp button {
   margin: 10px;

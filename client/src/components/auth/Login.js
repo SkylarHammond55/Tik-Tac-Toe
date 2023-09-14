@@ -21,7 +21,7 @@ const Login = () => {
         </Breadcrumb>
 
         <LoginBox
-          path = '/' 
+          path = '/joingame' 
         />
 
         {/* <Footer /> */}
