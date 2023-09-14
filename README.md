@@ -25,3 +25,53 @@ Created by group 7 through VS Code, React, MongoDB and the Mongoose ODM
 A page that allows for potential players/friends to play a fun game of tic-tac-toe!!
 
 ## Deployed site
+
+## Backend
+
+- MongoDB/Mongoose
+- Express
+- Node
+
+## Frontend
+
+- JavaScript
+- React
+- HTML
+- SASS
+- Tailwind
+- DaisyUI
+
+## Installation
+
+Open the package.json files in the root directory and in the client directory.
+
+Run npm i on both of the package.json files.
+
+Inside of the config directory in environment.js change your mongo DB connection string to your own.
+
+Run node/db/seeds.js to seed a hard coded database if you would like.
+
+Now start your server with npm start
+
+Once your server is running switch terminals and run npm start 
+
+Your react application will now open in your browser.
+
+## Contributors
+
+- Jonathan Gutierrerz:  https://https://github.com/2015johngtz
+
+- Randyn Collins: https://https://github.com/reddot9898
+
+- Skylar Hammond: https://https://github.com/SkylarHammond55
+
+- Andrea Castillo: https://
+
+- Tyson Starks: https://https://github.com/Starkoiii
+
+
+
+
+
+
+
